@@ -1,0 +1,15 @@
+# TODO Найдите количество книг, которое можно разместить на диск
+
+memory_size_in_mb = 1.44
+number_of_pages = 100
+number_of_lines = 50
+number_of_symbols = 25
+size_of_symbols_in_b = 4
+
+size_book_in_b = number_of_pages * number_of_lines * number_of_symbols * size_of_symbols_in_b
+memory_size_in_kb = memory_size_in_mb * 1024
+memory_size_in_b = memory_size_in_kb * 1024
+
+count_of_book = memory_size_in_b // size_book_in_b
+count_of_book = round(count_of_book)
+print("Количество книг, помещающихся на дискету:", count_of_book)
